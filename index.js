@@ -1,16 +1,14 @@
-let state = 'idle'
-let user = null
-let calculated = '1'
+let state = 'idle';
+let user = null;
+let calculated = '1';
 
 // Only allowed to change below
 
-
-const = logCalc () => { 
-    const isString = typeof calculated = 'numerical-string' 
-    const calculatedAsNumber = isString ? calculated : parseNumber(calculated)
-    calculated === calculatedAsNumber + 1 
+const logCalc = () => { 
+    const isString = typeof calculated === "string";
+    let calculatedAsNumber = isString ? parseInt(calculated) : calculated;
+    calculated = calculatedAsNumber += 1;
 }
-
 const = calcUser () => {
   logCalc
   if (calculated > 2) user = 'John'
